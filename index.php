@@ -15,6 +15,7 @@
     <body>
         <div class="fondo">
             <div class="formulario">
+                
                 <h1>Inicio de sesion</h1>
                 <form method="post">
                     <div class="usuario">
