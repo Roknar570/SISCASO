@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Iniciar</title>
         <link rel="stylesheet"  href="css/style.css" />
+        <script src="js/funciones.js"></script>
     </head>
     <body>
         <div class="fondo">
@@ -37,3 +38,33 @@
         </div>
     </body>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#entrarSistema').click(function(){
+
+		vacios=validarFormVacio('frmLogin');
+
+			if(vacios > 0){
+				alert("Debes llenar todos los campos!!");
+				return false;
+			}
+
+		datos=$('#frmLogin').serialize();
+		
+		$.ajax({
+			type:"POST",
+			data:datos,
+			url:"procesos/regLogin/login.php",
+			success:function(r){
+
+				if(r==1){
+					window.location="vistas/inicio.php";
+				}else{
+					alert("No se pudo acceder :(");
+				}
+			}
+		});
+	});
+	});
+</script>
