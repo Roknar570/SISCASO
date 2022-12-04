@@ -28,7 +28,7 @@
                     <input type="submit" value="iniciar">
                     <?php if($validar == 0) { ?>
                         <div class="registrarse">
-                            <a href="Registro/Reg_login.html">registrarse</a>
+                            <a href="vistas/Reg_login.html">registrarse</a>
                         </div>
                     <?php } ?>
                 </form>
