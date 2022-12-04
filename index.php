@@ -1,5 +1,5 @@
 <?php 
-	include "clases/Conexion.php";
+	include "Clases/Conexion.php";
 	$obj= new conectar();
     ($obj->existe("usuarios","cod_usuario","cod_usuario='admin'") ) ? $validar = 1 : $validar = 0;
 ?>

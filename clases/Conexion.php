@@ -42,7 +42,7 @@
 
 		public function Update($tabla, $campos, $Where){
 			$conn = $this->conexion();
-            $sql="UPDATE ".$tabla." SET ".$campos." ".$Where;
+            $sql="UPDATE ".$tabla." SET ".$campos." WHERE ".$Where;
             $result=mysqli_query( $conn, $sql);
 			if( $result ){
 				return true;
