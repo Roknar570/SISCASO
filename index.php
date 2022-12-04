@@ -15,9 +15,8 @@
     <body>
         <div class="fondo">
             <div class="formulario">
-                
                 <h1>Inicio de sesion</h1>
-                <form method="post">
+                <form method="post" action="funciones/login.php">
                     <div class="usuario">
                         <input type="text" required>
                         <label>Nombre de Usuario</label>
@@ -30,7 +29,7 @@
                     <input type="submit" value="iniciar">
                     <?php if($validar == 0) { ?>
                         <div class="registrarse">
-                            <a href="Clases/Reg_login.php">registrarse</a>
+                            <a href="vistas/Reg_login.php">registrarse</a>
                         </div>
                     <?php } ?>
                 </form>

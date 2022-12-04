@@ -1,5 +1,5 @@
 <?php
-    include "Conexion.php";
+    include "../Clases/Conexion.php";
     $obj= new conectar();
     /*variables POST*/ 
     $nombres    =$_POST['nombres'];
