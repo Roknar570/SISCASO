@@ -40,5 +40,16 @@
 			}
         }
 
+		public function Update($tabla, $campos, $Where){
+			$conn = $this->conexion();
+            $sql="UPDATE ".$tabla." SET ".$campos." ".$Where;
+            $result=mysqli_query( $conn, $sql);
+			if( $result ){
+				return true;
+			}else{
+				return false;
+			}
+        }
+
 	}
  ?>

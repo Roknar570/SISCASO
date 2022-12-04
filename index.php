@@ -21,6 +21,8 @@
                     <div class="usuario">
                         <input type="text" required>
                         <label>Nombre de Usuario</label>
+                    </div>  
+                    <div class="usuario">
                         <input type="password" required>
                         <label>Contraseña</label>   
                     </div>
