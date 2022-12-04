@@ -18,11 +18,11 @@
                 <h1>Inicio de sesion</h1>
                 <form method="post" action="funciones/login.php">
                     <div class="usuario">
-                        <input type="text" required>
+                        <input name="usuario" type="text" required>
                         <label>Nombre de Usuario</label>
                     </div>  
                     <div class="usuario">
-                        <input type="password" required>
+                        <input name="password" type="password" required>
                         <label>Contraseña</label>   
                     </div>
                     <div class="recordar">¿olvido su contraseña?</div>
