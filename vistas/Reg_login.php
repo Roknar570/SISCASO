@@ -1,3 +1,10 @@
+<?php 
+	include "../Clases/Conexion.php";
+	$obj= new conectar();
+    if($obj->existe("usuarios","cod_usuario","cod_usuario='admin'") ) {
+        header('Location: ../index.php');
+        die ();
+    }?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -36,7 +43,6 @@
                     <input name="password" type="password" required>
                     <label>password</label>
                 </div>
-                <a value="1" name="valor"></a>
                 <input type="submit" value="Registrar">
             </form>
         </div>
