@@ -8,23 +8,23 @@
     $telefono   =$_POST['telefono'];
     $email      =$_POST['email'];
     $password   =$_POST['password'];
+    
+    $fe_us_in = date("Y-m-d H:i:s");
 
+    echo $nombres." ".$apellidos." ".$cedula." ".$telefono." ".$email." ".$password." ".$fe_us_in;
 
-    echo $nombres." ".$apellidos." ".$cedula." ".$telefono." ".$email." ".$password;
+    $rs=$obj->Insert("usuarios", 
+    "cod_usuario, nombres, apellidos, cedula, telefono, email, password, Estado, fec_us_in, cod_us_in",
+    "'admin','".$nombres."','".$apellidos."','".$cedula."','".$telefono."','".$email."','".$password."','true','".$fe_us_in."', 'USU1'");
 
-    $obj->Update("usuarios",
-                 "cod_usuario='admin', nombres='".$nombres."', apellidos='".$apellidos.
-                 "', cedula='".$cedula."', telefono='".$telefono."', email='".$email.
-                 "', password='".$password."', Estado='true'",
-                 "cod_usuario='admin1'");
-
-    var_dump($obj);
-    if($obj){
-        echo 'entre';
-        //header('Location: ../index.php');
-
+    var_dump($rs);
+    
+    
+    if($rs){
+        header('Location: ../index.php');
+        echo' entre';
     }   else{
-        echo 'no pude';
+        echo ' no entre';
     }          
    
 
