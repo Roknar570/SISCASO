@@ -2,9 +2,6 @@
 	include "clases/Conexion.php";
 	$obj= new conectar();
     ($obj->existe("usuarios","cod_usuario","cod_usuario='admin'") ) ? $validar = 1 : $validar = 0;
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
