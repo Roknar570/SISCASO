@@ -12,7 +12,6 @@
         <title>Iniciar</title>
         <link rel="stylesheet"  href="css/style.css" />
         <script src="js/jquery-3.2.1.min.js"></script>
-        
         <script src="js/funciones.js"></script>
     </head>
     <body>
@@ -43,8 +42,8 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#entrarSistema').click(function(){
-            vacios=validarFormVacio('#frmInicio');
-            if(vacios > 0){
+           vacios=validarFormVacio('frmInicio');
+            if(vacios > 0){    
                 alert("Debes llenar todos los campos!!");
                 return false;
             }
@@ -52,9 +51,8 @@
             $.ajax({
                 type:"POST",
                 data:datos,
-                url:"procesos/login.php",
+                url: "procesos/login.php",
                 success:function(r){
-                    alert(r);
                     if(r==1){
                         window.location="vistas/inicio.html";
                     }else{
