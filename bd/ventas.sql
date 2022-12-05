@@ -10,7 +10,7 @@ create table usuarios(
 				telefono int,
 				email varchar(100),
 				password text(50),
-				Estado boolean,
+				Activo boolean,
 				fec_us_in date,
 				cod_us_in varchar(15),
 			);
