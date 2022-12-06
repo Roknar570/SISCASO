@@ -14,11 +14,6 @@ create table usuarios(
 				fec_us_in date,
 				cod_us_in varchar(15),
 			);
-
-
-
-
-
 /* create table categorias (
 				id_categoria int auto_increment,
 				id_usuario int not null,
