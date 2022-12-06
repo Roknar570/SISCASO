@@ -18,7 +18,7 @@
     <div class="fondo">
         <div class="formulario" >
             <h1>Registrarse</h1>
-            <form method="post"  action="../funciones/Reg_login.php">
+            <form method="post"  action="../procesos/Reg_login.php">
                 <div class="usuario">
                     <input name="nombres" type="text" required>
                     <label>Nombre</label>
