@@ -56,7 +56,7 @@
                     if(r==1){
                         window.location="vistas/inicio.html";
                     }else{
-                        alert("No se pudo acceder :(");
+                        alert("usuario o contraseña incorrecto");
                     }
                 }
             });
