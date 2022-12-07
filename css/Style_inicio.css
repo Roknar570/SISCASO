@@ -42,15 +42,12 @@ nav ul li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 100%;
+  width: auto;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
 .dropdown:hover .dropdown-content {
   display: block;
-  
-  block-size: 200px 10px;
-
 }
 
 .dropdown-content a {
