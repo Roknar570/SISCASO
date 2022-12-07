@@ -16,7 +16,7 @@
     "'admin','".$nombres."','".$apellidos."','".$cedula."','".$telefono."','".$email."','".$password."','true','".$fe_us_in."', 'USU1'");
     /*VALIDAR GUARDADO*/
     if($rs){
-        header('Location: ../index.php');
+        header('Location: ../vistas/inicio.html');
         die ();
     }
 ?>
