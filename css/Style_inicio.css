@@ -48,6 +48,9 @@ nav ul li a {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  
+  block-size: 200px 10px;
+
 }
 
 .dropdown-content a {
