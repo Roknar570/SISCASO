@@ -42,19 +42,14 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#entrarSistema').click(function(){
-           vacios=validarFormVacio('frmInicio');
-            if(vacios > 0){    
-                alert("Debes llenar todos los campos!!");
-                return false;
-            }
             datos=$('#frmInicio').serialize();
             $.ajax({
                 type:"POST",
                 data:datos,
-                url: "procesos/login.php",
+                url: "procesos/Login/Login.php",
                 success:function(r){
                     if(r==1){
-                        window.location="vistas/inicio.html";
+                        window.location="vistas/inicio.php";
                     }else{
                         alert("No se pudo acceder :(");
                     }

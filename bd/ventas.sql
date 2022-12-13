@@ -12,7 +12,7 @@ create table usuarios(
 				password text(50),
 				Activo boolean,
 				fec_us_in date,
-				cod_us_in varchar(15),
+				cod_us_in varchar(15)
 			);
 /* create table categorias (
 				id_categoria int auto_increment,
