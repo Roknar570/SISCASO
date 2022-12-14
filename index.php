@@ -1,4 +1,5 @@
 <?php 
+    session_start();
 	include "Clases/Conexion.php";
 	$obj= new conectar();
     ($obj->existe("usuarios","cod_usuario","cod_usuario='admin'") ) ? $validar = 1 : $validar = 0;
@@ -51,6 +52,7 @@
                     if(r==1){
                         window.location="vistas/inicio.php";
                     }else{
+                        alert(r);
                         alert("No se pudo acceder :(");
                     }
                 }

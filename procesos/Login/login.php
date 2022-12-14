@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include "../Clases/Conexion.php";
+    include "../../Clases/Conexion.php";
     $obj= new conectar();
 
     $usur   = $_POST['usuario'];
