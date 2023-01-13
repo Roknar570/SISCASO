@@ -15,6 +15,7 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/funciones.js"></script>
     </head>
+    
     <body>
         <div class="fondo">
             <div class="formulario">
