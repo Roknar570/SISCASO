@@ -1,9 +1,4 @@
-<?php 
-    session_start();
-	include "Clases/Conexion.php";
-	$obj= new conectar();
-    ($obj->existe("usuarios","cod_usuario","cod_usuario='admin'") ) ? $validar = 1 : $validar = 0;
-?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -31,11 +26,6 @@
                     </div>
                     <div class="recordar">¿olvido su contraseña?</div>
                     <input type="submit" value="Iniciar" id="entrarSistema">
-                    <?php if($validar == 0) { ?>
-                        <div class="registrarse">
-                            <a href="vistas/Reg_login.php">registrarse</a>
-                        </div>
-                    <?php } ?>
                 </form>
             </div>
         </div>
@@ -50,7 +40,7 @@
                 data:datos,
                 url: "procesos/Login/Login.php",
                 success:function(r){
-                    if(r==1){
+                    if(r){
                         window.location="vistas/inicio.php";
                     }else{
                         alert(r);

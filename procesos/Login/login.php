@@ -8,7 +8,7 @@
     $pswd   = $_POST['password'];
     
     echo $rs = $obj->existe("usuarios","cod_usuario","cod_usuario='".$usur."' AND password='".$pswd."'");
- 
+
     if($rs){
         $_SESSION['usu']=$usur;  
     }

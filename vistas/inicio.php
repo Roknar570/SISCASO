@@ -18,7 +18,7 @@ if(isset($_SESSION['usu'])){
            <div class = "dropdown" >
                 <a  href="#">Registrar tablas primarias</a> 
                 <div class="dropdown-content">
-                    <a href="#">Registro de calles</a>
+                    <a href="Tablas_Primarias/calles.php">Registro de calles</a>
                     <a href="#">Registro de Tipos de Enfermedad</a>
                     <a href="#">Registro de Tipos de discapacidad</a>
                     <a href="#">Registro de nivel Academico</a>
@@ -29,8 +29,8 @@ if(isset($_SESSION['usu'])){
             <div class = "dropdown" >
                 <a href="#">Familias</a>
                 <div class="dropdown-content">
-                    <a href="#">Registro de Integrantes de Familia</a>
-                    <a href="#">Registro de Jefe De Familia</a>
+                    <a href="Familias/Integ_Familia.php">Registro de Integrantes de Familia</a>
+                    <a href="Familias/Jefes_Familia.php">Registro de Jefe De Familia</a>
                 </div>
             </div>
         </li>        
@@ -40,10 +40,8 @@ if(isset($_SESSION['usu'])){
 		<li><a href="#">Salir</a></li>
 	 </ul>
     </nav>
-   
 </header>
 <body>
-
 </body>
 </html>
 <?php    }
