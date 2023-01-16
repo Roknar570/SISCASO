@@ -1,3 +1,7 @@
+<?php 
+session_start();
+if(isset($_SESSION['usu'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,5 +32,26 @@
     </nav>
 </header>
 <body>
+    <div class="container">
+        <div class="registro">
+            <h1>Articulos</h1>
+            <form class="calles" enctype="multipart/form-data">
+                <div class="inputContainer">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label>Descripcion</label>
+                    <input type="text" id="descripcion" name="descripcion">
+                </div>
+                <p></p>
+                <button>Agregar</button>
+            </form>
+            <div id="tablaArticulosLoad"></div>
+        </div>
+    </div>
 </body>
 </html>
+<?php    }
+    else{
+         header("location:../index.php");
+    }
+?>

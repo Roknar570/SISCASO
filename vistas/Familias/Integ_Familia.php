@@ -9,18 +9,18 @@
 <header>
     <nav>
         <ul>
-		<li> 
-            <div class = "dropdown" >
-                <a href="#">Familias</a>
-                <div class="dropdown-content">
-                    <a href="Familias/Jefes_Familia.php">Registro de Jefe De Familia</a>
+            <li> 
+                <div class = "dropdown" >
+                    <a href="#">Familias</a>
+                    <div class="dropdown-content">
+                        <a href="Familias/Jefes_Familia.php">Registro de Jefe De Familia</a>
+                    </div>
                 </div>
-            </div>
-        </li>  
-        <li><a href="#">Reportes</a></li>
-        <li><a href="../inicio.php">inicio</a></li>
-		<li><a href="#">Salir</a></li>
-	 </ul>
+            </li>  
+            <li><a href="#">Reportes</a></li>
+            <li><a href="../inicio.php">inicio</a></li>
+            <li><a href="#">Salir</a></li>
+	    </ul>
     </nav>
 </header>
 <body>
