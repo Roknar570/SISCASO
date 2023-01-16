@@ -34,16 +34,17 @@ if(isset($_SESSION['usu'])){
 <body>
     <div class="container">
         <div class="registro">
-            <h1>Articulos</h1>
+            <h1 class="title" >REGISTRO DE CALLES</h1>
             <form class="calles" enctype="multipart/form-data">
                 <div class="inputContainer">
+                    <input type="text" id="nombre" name="nombre" placeholder="a">    
                     <label>Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
-                    <label>Descripcion</label>
-                    <input type="text" id="descripcion" name="descripcion">
                 </div>
-                <p></p>
-                <button>Agregar</button>
+                <div class="inputContainer">
+                    <input type="text" id="descripcion" name="descripcion"  placeholder="a">
+                    <label>Descripcion</label>
+                </div>
+                <button class="submitBtn">Agregar</button>
             </form>
             <div id="tablaArticulosLoad"></div>
         </div>
