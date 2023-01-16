@@ -20,7 +20,7 @@ if(isset($_SESSION['usu'])){
                 <a  href="#">Registrar tablas primarias</a> 
                 <div class="dropdown-content">
                     <a href="calles.php">Registro de calles</a>
-                    <a href="T_Discapacidad.php">Registro de Tipos de discapacidad</a>
+                    <a href="Enfermedad.php">Registro de Tipos de Enfermedad</a>
                     <a href="Nivel_Academico.php">Registro de nivel Academico</a>
                 </div>
            </div>

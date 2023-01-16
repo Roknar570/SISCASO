@@ -37,20 +37,42 @@ if(isset($_SESSION['usu'])){
             <h1 class="title" >REGISTRO DE CALLES</h1>
             <form class="calles" enctype="multipart/form-data">
                 <div class="inputContainer">
-                    <input type="text" id="nombre" name="nombre" placeholder="a">    
-                    <label>Nombre</label>
+                    <input type="text" id="cod_calle" name="cod_calle" placeholder="a">    
+                    <label>Codigo De Calle</label>
                 </div>
                 <div class="inputContainer">
                     <input type="text" id="descripcion" name="descripcion"  placeholder="a">
                     <label>Descripcion</label>
                 </div>
-                <button class="submitBtn">Agregar</button>
+                <button class="submitBtn" id="Agregar">Agregar</button>
             </form>
             <div id="tablaArticulosLoad"></div>
         </div>
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#Agregar').click(function(){
+            datos=$('#calles').serialize();
+            $.ajax({
+                type:"POST",
+                data:datos,
+                url: "../../procesos/registro/calles.php",
+                success:function(r){
+                    if(r){
+                        window.location="vistas/inicio.php";
+                    }else{
+                        alert(r);
+                        alert("No se pudo acceder :(");
+                    }
+                }
+            });
+	    });
+	});
+</script>
+
 <?php    }
     else{
          header("location:../index.php");

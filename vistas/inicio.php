@@ -19,9 +19,9 @@ if(isset($_SESSION['usu'])){
                 <a  href="#">Registrar tablas primarias</a> 
                 <div class="dropdown-content">
                     <a href="Tablas_Primarias/calles.php">Registro de calles</a>
-                    <a href="#">Registro de Tipos de Enfermedad</a>
-                    <a href="#">Registro de Tipos de discapacidad</a>
-                    <a href="#">Registro de nivel Academico</a>
+                    <a href="Tablas_Primarias/Enfermedad.php">Registro de Tipos de Enfermedad</a>
+                    <a href="Tablas_Primarias/Discapacidad.php">Registro de Tipos de discapacidad</a>
+                    <a href="Tablas_Primarias/Nivel_Academico.php">Registro de nivel Academico</a>
                 </div>
            </div>
         </li>
