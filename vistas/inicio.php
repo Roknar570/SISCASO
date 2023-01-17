@@ -37,7 +37,7 @@ if(isset($_SESSION['usu'])){
         <li><a href="#">Reportes</a></li>
 		<li><a href="#">Usuarios</a></l>
 		<li><a href="#">Procesos</a></li>
-		<li><a href="#">Salir</a></li>
+		<li><a href="../procesos/salir.php">Salir</a></li>
 	 </ul>
     </nav>
 </header>

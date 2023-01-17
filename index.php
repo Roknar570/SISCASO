@@ -16,16 +16,16 @@
             <div class="formulario">
                 <h1>Inicio de sesion</h1>
                 <form id="frmInicio">
-                    <div class="usuario">
+                    <div class="inputContainer ">
                         <input name="usuario" type="text" required>
                         <label>Nombre de Usuario</label>
                     </div>  
-                    <div class="usuario">
+                    <div class="inputContainer">
                         <input name="password" type="password" required>
                         <label>Contraseña</label>   
                     </div>
                     <div class="recordar">¿olvido su contraseña?</div>
-                    <input type="submit" value="Iniciar" id="entrarSistema">
+                    <button class="submitBtn" id="entrarSistema">iniciar</button>
                 </form>
             </div>
         </div>

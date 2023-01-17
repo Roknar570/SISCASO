@@ -27,7 +27,7 @@ if(isset($_SESSION['usu'])){
         </li>  
         <li><a href="#">Reportes</a></li>
         <li><a href="../inicio.php">inicio</a></li>
-		<li><a href="#">Salir</a></li>
+		<li><a href="../../procesos/salir.php">Salir</a></li>
 	 </ul>
     </nav>
 </header>
